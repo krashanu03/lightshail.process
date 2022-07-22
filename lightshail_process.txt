@@ -1,0 +1,26 @@
+    1 ssh -i lighshailkey bitnami@sansa.ai
+    2 ls
+    3  cd /opt/bitnami/apache/conf/bitnami/certs/
+    4  ls
+    5  ls -al
+    6  mv server.crt server.crt.save
+    7  mv server.key server.key.save
+    8  nano server.crt (this is certificate)
+    9  nano server.key(this is key)
+   10  ls -al
+   11  cat server.crt.save
+   12  nano /opt/bitnami/apache/conf/httpd.conf (here present a server name)
+   13  nano /opt/bitnami/apache/conf/extra/httpd-ssl.conf
+   14  nano /opt/bitnami/apache/conf/httpd.conf
+   15  cd /opt/bitnami/
+   16  ls
+   17  sudo ./ctlscript.sh restart apache
+   18  sudo ./ctlscript.sh status apache
+   19  cd apache/logs/
+   20  ls
+   21  tail -f error_log
+   22  sudo ./ctlscript.sh restart apache
+   23  sudo /opt/bitnami/ctlscript.sh restart apache
+   24  sudo /opt/bitnami/ctlscript.sh stop apache
+   25  tail -f error_log
+      if you get logs you can opt/bitnami/apache/logs then tail -f error_logs
