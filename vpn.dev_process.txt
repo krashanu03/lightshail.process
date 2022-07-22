@@ -1,0 +1,8 @@
+first go to CICD project and oopen cmd 
+and past the command ssh -i devendra.key.pem ec2-user@vpn.dev-zone.filed.command
+sudo ./open
+(1)
+raksha create a file name raksha
+cat raksha.ovpn
+copy contant and create file in local computer with ovpn extentin 
+copy whole file and notepad
